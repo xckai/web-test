@@ -4,7 +4,7 @@
     - Circulation Reverse consume 65.33499999786727 ms
     - Duff consume 32.99499999266118 ms
 2. safari
-    -Circulation consume 37.4 ms
+    - Circulation consume 37.4 ms
     - Circulation Reverse consume 32.9 ms
     - Duff consume 62.2 ms
 3. firefox
