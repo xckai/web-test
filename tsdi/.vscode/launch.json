@@ -7,10 +7,9 @@
         "name": "DI",
         "type": "node",
         "request": "launch",
-        "args": ["./test/index.js"],
-
+        "args": ["./dist/test.js"],
         "sourceMaps": true,
-        "cwd": "${workspaceRoot}/di/dist",
+        "cwd": "${workspaceRoot}",
         "protocol": "inspector",
     }]
 }
