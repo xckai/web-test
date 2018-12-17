@@ -38,7 +38,7 @@ let Stack=function(){
     return new Proxy(data,{
         get:function(target,key){
             if(!!~method.indexOf(key)){
-                console.log(target,key)
+                console.log(target,key,receiver)
                 return target[key].bind(target)
             }else{
                 return undefined
