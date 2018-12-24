@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var StorageMap = (function () {
+var StorageMap = /** @class */ (function () {
     function StorageMap() {
         this.data = new Map();
     }
@@ -20,7 +20,7 @@ var StorageMap = (function () {
     };
     return StorageMap;
 }());
-var StorageSet = (function () {
+var StorageSet = /** @class */ (function () {
     function StorageSet() {
         this.data = new Set();
     }

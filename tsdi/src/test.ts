@@ -1,24 +1,19 @@
-import {Inject, Provider}from './Inject'
-import { Factory } from './Factory';
+import { Inject, Provider } from "./Inject";
+import { Factory } from "./Factory";
 
-class t{
-    name:123
-    sayHello(){
-        console.log("hello")
-    }
+class t {
+  name: 123;
+  sayHello() {
+    console.log("hello");
+  }
 }
-Provider(t)
-@Inject()
-class Person{
-    constructor(private t:[],private o:number=1){
-    
-    }
-    name:string
-    sayName(){
-        console.log(this.name||"Anonymous")
-    }
+Provider(t);
+class Person {
+  constructor(public t: t) {}
+  name: string;
+  sayName() {
+    console.log(this.name || "Anonymous");
+  }
 }
-let p=Factory(Person)
-p.sayName()
-
-
+let p = Factory(Person);
+p.t.sayHello();
